@@ -248,7 +248,7 @@ h2:hover {
 .tarjeta {
     flex: 1;
     margin: 0 1px;
-    padding: 150px; 
+    padding: 200px; 
     background: #8b98dffd;
     color: rgb(236, 54, 54);
     border-radius: 5px;
@@ -265,13 +265,13 @@ h2:hover {
 
 .contenido {
     display: none;
-    position: absolute;
+    position: absolute !important;
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%); 
     text-align: left; 
-    width: 150%; 
-    padding: 150px;
+    width: 130%; 
+    padding: 90px;
     background: rgba(214, 45, 230, 0.9);
     color: #4b0114;
     border-radius: 2px;
