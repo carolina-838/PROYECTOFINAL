@@ -1,0 +1,425 @@
+
+.container-fluid{ background-color: rgb(247, 243, 246); 
+width: 50%;
+margin: auto;
+background: #0b0c0b;
+border-radius: 5px;
+padding: 5px;
+
+}
+
+/* Cambiar el color de los enlaces a blanco */
+.nav-link, .dropdown-menu {color: rgb(5, 167, 54) !important; }
+.dropdown-menu {background-color: #080808 !important;
+    margin: 0px 50px; /* 50px arriba y abajo, 20px a los lados */
+    padding: 0px 50px; /* 40px arriba y abajo, 0 a los lados */
+    box-shadow: 50px 50px 50px rgba(228, 40, 181, 0.5); 
+}
+
+#new-song-url,
+#new-song-title {
+    background-color: #070a08 !important;
+    border-color: #970843;
+    width: calc(91% - 10px) !important; /* Ajusta el ancho total menos márgenes */
+    padding: 8px!important; /* Espaciado interno */
+    margin: 5px auto !important; /* Centrando verticalmente y horizontalmente */
+    display: block !important; /* Asegúrate de que se comporten como bloques */
+}
+
+ #add-song {
+
+background-color: #970843 !important;
+align-items: center !important;
+margin: 0px 20px ; 
+padding: 0px 50px ;
+text-align: center; color:white !important;
+
+}
+
+.dropdown-item {color: rgb(245, 241, 241) !important; }
+
+.dropdown-item:hover {background-color: rgb(59, 55, 243) !important;}
+
+/* Cambiar el color del texto "Cree en ti y avanza." a fucsia */
+.frase .nav-link.disabled {
+    color: rgb(214, 4, 134) !important; 
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f4f4;
+    color: #fcfbfbda;
+    margin: 0px 50px; /* 50px arriba y abajo, 20px a los lados */
+    padding: 0px 50px; /* 40px arriba y abajo, 0 a los lados */
+}
+
+.container {
+    width: 400%;
+    max-width: 900px;
+    margin: auto;
+    background: #f794f7;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgb(27, 4, 230);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(to right, #007BFF, #52B788);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.foto-carrusel {
+    position: relative;
+    display: inline-block;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.carrusel {
+    position: absolute; /* Permite superponer las imágenes */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.carrusel-imagen {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    display: none; 
+    border-radius: 50%;
+}
+
+.carrusel-imagen.active {
+    display: block; /* Muestra solo la imagen activa */
+}
+
+.flechas {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: space-between ; /* Espacio entre flechas */
+    width: 210px; 
+}
+
+.flecha {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 50%;
+    font-size: 16px; 
+    cursor: pointer;
+    padding: 5px; 
+    transition: background-color 0.3s ease;
+    width: 38px; 
+    height: 40px; 
+}
+
+.flecha:hover {
+    background-color: rgb(100, 6, 252);
+    
+}
+
+.titulo {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+h2 {
+    border-bottom: 2px solid #c5db5ffb;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+h2:hover {
+    transform: rotate(-2deg) translateY(-2px);
+}
+
+.contacto {
+    margin: 20px 0; 
+    padding: 2px; 
+    border-radius: 5px;
+    background: black; 
+    transition: background-color 0.60s ease;
+    text-align: center; 
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    
+}
+
+.carrusel-contacto {
+    display: flex;
+    overflow: hidden;
+    width: 50%; 
+}
+
+.contacto-item {
+    min-width: 120px; 
+    max-width: 200px; 
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 20px; 
+}
+
+.icono-contacto {
+    width: 50px; 
+    height: 55px;
+    margin-bottom: 10px; 
+}
+
+.educacion {
+    margin: 20px 0; 
+    padding: 20px; 
+    border-radius: 5px;
+    
+    background: #f5f1f1; 
+    transition: background-color 0.3s ease;
+}
+
+.educacion-contenedor {
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+.estudios-basicos, .estudios-tecnicos, .cursos-cortos {
+    margin-bottom: 15px; 
+    text-align: left; color: rgb(8, 8, 8);
+}
+
+.estudio {
+    background: #a2a8fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-mi  {
+    margin: 20px 0; 
+    padding: 20px; 
+    border-radius: 5px;
+    background: #010044; 
+    transition: background-color 0.3s ease;
+    text-align: center; color: #f2f6fa
+
+}
+
+.experiencia, .habilidades {
+    margin: 20px 0; 
+    padding: 20px; 
+    border-radius: 5px;
+    background: #1f0117; 
+    transition: background-color 0.3s ease;
+    text-align: left; color: rgb(252, 126, 210);
+}
+
+.sobre-mi, .experiencia, .habilidades {
+    margin: 15px 0; 
+    padding: 15px; 
+}
+
+
+
+.tarjetas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tarjeta {
+    flex: 1;
+    margin: 0 1px;
+    padding: 150px; 
+    background: #8b98dffd;
+    color: rgb(236, 54, 54);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    background: #c6a4e2; /* Color más oscuro al pasar el cursor */
+}
+
+.contenido {
+    display: none;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: left; 
+    width: 150%; 
+    padding: 150px;
+    background: rgba(214, 45, 230, 0.9);
+    color: #4b0114;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.tarjeta:hover .contenido {
+    display: block; /* Mostrar contenido al pasar el cursor */
+}
+
+.habilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.habilidades li {
+    background-color: #3049d6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.habilidades li:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center; color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+    background-color: #000802;
+}
+
+.general, .habitos, .actitud { text-align: center;
+    margin: -10px;
+
+}
+
+.habilidades{
+    text-align: center;
+}
+
+/* PlaylisT */
+
+#audio-player {
+    position: fixed; /* Fija el reproductor en la pantalla */
+    bottom: 2px; /* Distancia desde la parte inferior */
+    right: 2px; /* Distancia desde la derecha */
+    width: 1485px 148px; /* Ancho del reproductor */
+    background-color: #070836; 
+    border-radius: 5px; 
+    padding: 10px; /* Espacio interno */
+    box-shadow: 0 0 80px rgba(2, 161, 50, 0.5); 
+    display: none; ; /* Ocultarlo inicialmente */
+
+}
+
+        .nav {
+            margin-bottom: 20px; 
+        }
+
+        .player-container {
+            position: fixed;
+            bottom: 2px;
+            right: 2px;
+            display: none; 
+        }
+
+        .toggle-player {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        /* Contactame */
+
+        #contactForm {
+            margin: 0; 
+            padding: 20px; 
+            background: #0a0a0a; 
+            border-radius: 8px; 
+            box-shadow: 0 1px 2px rgb(159, 179, 245); 
+            text-align: left;
+            width: 100%; 
+        }
+        
+        #contact {
+            text-align: center; 
+            color: rgb(5, 5, 5); 
+        }
+        
+        label {
+            display: block; 
+            margin-bottom: 5px; 
+            font-weight: bold; 
+            color: white; 
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"] {
+            width: calc(100% - 20px); 
+            padding: 10px; 
+            margin-bottom: 5px; 
+            border-radius: 5px;
+            border: 1px solid #ccc; 
+            background-color: #0a0a0a; 
+            color: white; 
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus {
+            background-color: white; 
+            color: black; 
+        }
+        
+        /*  fecha y hora  */
+        
+        .date-time-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .date-time-container div {
+            width: calc(50% - 5px); 
+        }
+        
+        .submit-button {
+            width: 100%; 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            padding: 10px; 
+        }
+        
+        .submit-button:hover {
+            background-color: #f33a3a; 
+        }
+
+        
+
+   
